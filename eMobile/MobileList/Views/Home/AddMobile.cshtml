@@ -1,0 +1,80 @@
+﻿@model List<MobileList.Dtos.Manufacturer.GetManufacturerDto>
+
+@{
+    ViewData["Title"] = "AddMobile";
+}
+
+<h1>AddMobile</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddRedirect" enctype="multipart/form-data">
+            <div class="form-group">
+                <label >Name</label>
+                <input name="Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label >Size</label>
+                <input name="Size" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label >Weight</label>
+                <input name="Weight" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label >Resolution</label>
+                <input name="Resolution" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label >Processor</label>
+                <input name="Processor" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label >Memory</label>
+                <input name="Memory" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label >OperatingSystem</label>
+                <input name="OperatingSystem" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label >Price</label>
+                <input name="Price" class="form-control" />
+            </div>
+            <div class="form-group">
+                <select name="Manufacturer">
+                    @{
+                        foreach (var m in Model)
+                        {
+                            <option value="@m.Id">@m.Name</option>
+                        }
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label >ThumbNail</label>
+                <input name="ThumbNail" type="file">
+            </div>
+
+            <div class="form-group">
+                <label >Images</label>
+                <input name="Images" type="file" multiple>
+            </div>
+            
+            <div class="form-group">
+                <label >Videos</label>
+                <input name="Videos" type="file" multiple>
+            </div>
+
+            <div class="form-group"> 
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

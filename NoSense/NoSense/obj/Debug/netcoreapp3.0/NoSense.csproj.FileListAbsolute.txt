@@ -1,0 +1,11 @@
+C:\Users\Koko\source\repos\NoSense\NoSense\bin\Debug\netcoreapp3.0\NoSense.exe
+C:\Users\Koko\source\repos\NoSense\NoSense\bin\Debug\netcoreapp3.0\NoSense.deps.json
+C:\Users\Koko\source\repos\NoSense\NoSense\bin\Debug\netcoreapp3.0\NoSense.runtimeconfig.json
+C:\Users\Koko\source\repos\NoSense\NoSense\bin\Debug\netcoreapp3.0\NoSense.runtimeconfig.dev.json
+C:\Users\Koko\source\repos\NoSense\NoSense\bin\Debug\netcoreapp3.0\NoSense.dll
+C:\Users\Koko\source\repos\NoSense\NoSense\bin\Debug\netcoreapp3.0\NoSense.pdb
+C:\Users\Koko\source\repos\NoSense\NoSense\obj\Debug\netcoreapp3.0\NoSense.csprojAssemblyReference.cache
+C:\Users\Koko\source\repos\NoSense\NoSense\obj\Debug\netcoreapp3.0\NoSense.AssemblyInfoInputs.cache
+C:\Users\Koko\source\repos\NoSense\NoSense\obj\Debug\netcoreapp3.0\NoSense.AssemblyInfo.cs
+C:\Users\Koko\source\repos\NoSense\NoSense\obj\Debug\netcoreapp3.0\NoSense.dll
+C:\Users\Koko\source\repos\NoSense\NoSense\obj\Debug\netcoreapp3.0\NoSense.pdb
