@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Koko\\source\\repos\\NoSense\\NoSense\\NoSense.csproj": {}
+    "C:\\Users\\Koko\\source\\repos\\eMobile-NoSense\\NoSense\\NoSense\\NoSense.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Koko\\source\\repos\\NoSense\\NoSense\\NoSense.csproj": {
+    "C:\\Users\\Koko\\source\\repos\\eMobile-NoSense\\NoSense\\NoSense\\NoSense.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Koko\\source\\repos\\NoSense\\NoSense\\NoSense.csproj",
+        "projectUniqueName": "C:\\Users\\Koko\\source\\repos\\eMobile-NoSense\\NoSense\\NoSense\\NoSense.csproj",
         "projectName": "NoSense",
-        "projectPath": "C:\\Users\\Koko\\source\\repos\\NoSense\\NoSense\\NoSense.csproj",
+        "projectPath": "C:\\Users\\Koko\\source\\repos\\eMobile-NoSense\\NoSense\\NoSense\\NoSense.csproj",
         "packagesPath": "C:\\Users\\Koko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Koko\\source\\repos\\NoSense\\NoSense\\obj\\",
+        "outputPath": "C:\\Users\\Koko\\source\\repos\\eMobile-NoSense\\NoSense\\NoSense\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

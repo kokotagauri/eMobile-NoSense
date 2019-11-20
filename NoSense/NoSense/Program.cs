@@ -27,9 +27,9 @@ namespace NoSense
         public static void Work(string arrayInput)
         {
             var data = arrayInput.Split(',').Select(n => Convert.ToInt32(n)).ToArray();
-            Console.WriteLine("Return value for first case: " + data.ThisDoesntMakeAnySense(i => i % 1 == 0, NewValue).First());
+            Console.WriteLine("Return value for first case: " + data.ThisDoesntMakeAnySense(i => i % 1 == 0, NewValue));
             Thread.Sleep(2000);
-            Console.WriteLine("Return value for second case: " + data.ThisDoesntMakeAnySense(i => i*2 % 2 != 0, NewValue).First());
+            Console.WriteLine("Return value for second case: " + data.ThisDoesntMakeAnySense(i => i*2 % 2 != 0, NewValue));
             Thread.Sleep(2000);
             Console.WriteLine("Third case: Exception will be thrown in");
             Console.WriteLine("3");
@@ -40,19 +40,19 @@ namespace NoSense
             Thread.Sleep(1000);
             Console.WriteLine("Boom!");
             Thread.Sleep(1000);
-            Console.WriteLine(data.ThisDoesntMakeAnySense(i => i % 2 == 0, null).First());
+            Console.WriteLine(data.ThisDoesntMakeAnySense(i => i % 2 == 0, null));
         }
 
-        public static IEnumerable<T> ThisDoesntMakeAnySense<T>(this IEnumerable<T> data, Func<T, bool> predicate = null, Func<T> newValue = null)
+        public static T ThisDoesntMakeAnySense<T>(this IEnumerable<T> data, Func<T, bool> predicate = null, Func<T> newValue = null)
         {
-            if (predicate == null || newValue == null)
+            if (data == null || predicate == null || newValue == null)
                 throw new NullReferenceException();
 
             foreach (var value in data)
                 if (predicate(value))
-                    yield return default;
+                    return default;
 
-            yield return newValue();
+            return newValue();
         }
 
         private static bool IsValidArray(string arr)
